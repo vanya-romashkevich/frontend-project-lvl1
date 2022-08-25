@@ -9,7 +9,7 @@ const evenGame = () => {
 
     const username = nameUser();
     
-    console.log(`'Hello, ${username}!\n Answer "yes" if the number is even, otherwise answer "no".'`);
+    console.log(`Hello, ${username}!\nAnswer "yes" if the number is even, otherwise answer "no".`);
 
     const gameData = () => {
 
@@ -45,12 +45,11 @@ const evenGame = () => {
             }
             return console.log(`Congratulations, ${username}!`);
         };
-
-        return game
     };
 
-
+    gameData()
     
 }
+
 
 export default evenGame
