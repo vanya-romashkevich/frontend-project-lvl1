@@ -1,4 +1,2 @@
 #!/usr/bin/env node
-import nameUser from '../src/cli.js'
-
-
+import nameUser from '../src/cli.js';
