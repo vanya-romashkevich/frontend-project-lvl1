@@ -28,8 +28,8 @@ export const calc = () => {
   return [question, rightAnswer];
 };
 
-const startBrainCalcGame = () => {
+const startGame = () => {
   gameRounds(description, calc);
 };
 
-export default startBrainCalcGame;
+export default startGame;

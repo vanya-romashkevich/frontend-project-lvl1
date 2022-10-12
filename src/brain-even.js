@@ -2,7 +2,7 @@
 import readlineSync from 'readline-sync';
 import nameUser from './cli.js';
 
-const evenGame = () => {
+const startGame = () => {
   console.log('Welcome to the Brain Games!');
 
   const username = nameUser();
@@ -29,4 +29,4 @@ const evenGame = () => {
   }
   return console.log(`Congratulations, ${username}!`);
 };
-export default evenGame;
+export default startGame;
