@@ -20,8 +20,8 @@ const sum = (num1, operator, num2) => {
 
 export const calc = () => {
   const operations = ['+', '-', '*'];
-  const num1 = randomNumber(1, 100);
-  const num2 = randomNumber(1, 100);
+  const num1 = randomNumber(1, 20);
+  const num2 = randomNumber(1, 20);
   const operator = operations[randomNumber(0, (operations.length - 1))];
   const question = `${num1} ${operator} ${num2}`;
   const rightAnswer = String(sum(num1, operator, num2));
