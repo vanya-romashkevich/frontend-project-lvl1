@@ -1,5 +1,5 @@
-import randomNumber from './additional content/randomNumber.js';
-import gameRounds from './index.js';
+import randomNumber from '../additional content/randomNumber.js';
+import gameRounds from '../index.js';
 
 const description = 'What is the result of the expression? ';
 
