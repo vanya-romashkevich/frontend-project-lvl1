@@ -3,8 +3,6 @@ import readlineSync from 'readline-sync';
 import nameUser from '../cli.js';
 
 const startGame = () => {
-  console.log('Welcome to the Brain Games!');
-
   const username = nameUser();
 
   // Description
