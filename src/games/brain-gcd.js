@@ -11,11 +11,11 @@ const gcd = (number1, number2) => {
 };
 
 const gcdGame = () => {
-  const randomNubmer1 = randomNumber(1, 20);
-  const randomNubmer2 = randomNumber(1, 20);
-  const randomOperation = `${randomNubmer1} ${randomNubmer2}`;
+  const randomNumber1 = randomNumber(1, 20);
+  const randomNumber2 = randomNumber(1, 20);
+  const randomOperation = `${randomNumber1} ${randomNumber2}`;
 
-  return [randomOperation, String(gcd(randomNubmer1, randomNubmer2))];
+  return [randomOperation, String(gcd(randomNumber1, randomNumber2))];
 };
 
 const startGame = () => gameRounds(description, gcdGame);
