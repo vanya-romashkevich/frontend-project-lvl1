@@ -6,7 +6,7 @@ const startGame = () => {
   const username = nameUser();
 
   // Description
-  console.log(`Hello, ${username}!\nAnswer "yes" if the number is even, otherwise answer "no".`);
+  console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
   for (let i = 0; i < 3; i += 1) {
     const randomNumber = Math.floor(Math.random() * 100);
