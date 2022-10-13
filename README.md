@@ -19,4 +19,5 @@ make lint
 ---
 
 ### brain-even game demonstration:
-[![asciicast](https://asciinema.org/a/GjSigkXr45JMiqXRsisvIyCeZ)
+[![asciicast](https://asciinema.org/a/GjSigkXr45JMiqXRsisvIyCeZ.svg)](https://asciinema.org/a/GjSigkXr45JMiqXRsisvIyCeZ)
+
