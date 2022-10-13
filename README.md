@@ -9,10 +9,14 @@
 
 ---
 ## Project description:
+```
 Mind Games Project - five brain training games (Even Check, Calculator, GCD, Arithmetic Progression, Prime Number)
+```
 
 ### Minimum requirements:
+```
 Node.js 13+
+```
 
 ### Installation:
 ```
