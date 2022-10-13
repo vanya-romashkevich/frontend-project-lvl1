@@ -1,30 +1,14 @@
-/* eslint-disable no-shadow */
-import readlineSync from 'readline-sync';
-import nameUser from '../cli.js';
+import randomNumber from '../additional content/randomNumber.js';
+import gameRounds from '../index.js';
 
-const startGame = () => {
-  const username = nameUser();
+const description = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-  // Description
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
+const isEven = () => randomNumber % 2 === 0;
 
-  for (let i = 0; i < 3; i += 1) {
-    const randomNumber = Math.floor(Math.random() * 100);
-    // задание со случайным числом юзеру
-    const userAnswer = readlineSync.question(`Question: ${randomNumber}\n`);
-    // ответ с тернарником для замены в ответе
-    const opposite = (userAnswer === 'yes' ? 'no' : 'yes');
-    const errorMessage = (`${userAnswer} is wrong answer ;(. Correct answer was '${opposite}'. \nLet's try again, ${username}!`);
-    const isEven = (randomNumber) => randomNumber % 2 === 0;
-    const expectedAnswer = isEven(randomNumber) ? 'yes' : 'no';
-    if (expectedAnswer === userAnswer) {
-      console.log('Correct');
-    } else if (expectedAnswer !== userAnswer) {
-      return console.log(errorMessage);
-    } else {
-      return console.log(errorMessage);
-    }
-  }
-  return console.log(`Congratulations, ${username}!`);
+const evenGame = () => {
+  const randomNubmer1 = randomNumber(1, 20);
+  const correctAnswer = isEven(randomNubmer1) ? 'yes' : 'no';
+  return [randomNubmer1, correctAnswer];
 };
+const startGame = () => gameRounds(description, evenGame);
 export default startGame;
