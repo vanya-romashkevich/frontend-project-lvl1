@@ -18,7 +18,7 @@ const sum = (num1, operator, num2) => {
   return rightAnswer;
 };
 
-export const calc = () => {
+export const calcGame = () => {
   const operations = ['+', '-', '*'];
   const num1 = randomNumber(1, 20);
   const num2 = randomNumber(1, 20);
@@ -28,8 +28,6 @@ export const calc = () => {
   return [question, rightAnswer];
 };
 
-const startGame = () => {
-  gameRounds(description, calc);
-};
+const startGame = () => gameRounds(description, calcGame);
 
 export default startGame;
