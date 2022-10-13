@@ -9,13 +9,10 @@
 
 ---
 ## Project description:
-#### Mind Games Project - five brain training games (Even Check, Calculator, GCD, Arithmetic Progression, Prime Number)
+Mind Games Project - five brain training games (Even Check, Calculator, GCD, Arithmetic Progression, Prime Number)
 
----
 ### Minimum requirements:
 Node.js 13+
-
----
 
 ### Installation:
 ```
@@ -27,9 +24,8 @@ make lint
 ---
 
 ## brain-even game demonstration:
----
 ### Is the number even?
-#### for start:
+for start:
 ```
 brain-even
 ```
@@ -38,9 +34,8 @@ brain-even
 ---
 
 ## brain-calc game demonstration:
----
 ### Solve an arithmetic problem
-#### for start:
+for start:
 ```
 brain-calc
 ```
@@ -49,9 +44,8 @@ brain-calc
 ---
 
 ## brain-gcd game demonstration:
----
 ### Find the greatest common divisor of two numbers
-#### for start:
+for start:
 ```
 brain-gcd
 ```
@@ -60,9 +54,8 @@ brain-gcd
 ---
 
 ## brain-progression game demonstration:
----
 ### Insert missing number
-#### for start:
+for start:
 ```
 brain-progression
 ```
@@ -71,14 +64,12 @@ brain-progression
 ---
 
 ## brain-prime game demonstration:
----
 ### Is the number prime?
-#### for start:
+for start:
 ```
 brain-prime
 ```
 [![asciicast](https://asciinema.org/a/Gx498M40YwqYQxYqeA07sbwIE.svg)](https://asciinema.org/a/Gx498M40YwqYQxYqeA07sbwIE)
 
----
 
 
