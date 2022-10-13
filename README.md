@@ -13,11 +13,11 @@
 
 ---
 ### Minimum requirements:
-#### Node.js 13+
+Node.js 13+
 
 ---
 
-### Installation
+### Installation:
 ```
 git clone git@github.com:vanya-romashkevich/frontend-project-lvl1.git
 make install 
