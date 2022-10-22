@@ -4,21 +4,16 @@ import gameRounds from '../index.js';
 const description = 'What is the result of the expression? ';
 
 const calculate = (num1, operator, num2) => {
-  let rightAnswer = 0;
   switch (operator) {
     case '*':
-      rightAnswer = num1 * num2;
-      break;
+      return num1 * num2;
     case '+':
-      rightAnswer = num1 + num2;
-      break;
+      return num1 + num2;
     case '-':
-      rightAnswer = num1 - num2;
-      break;
+      return num1 - num2;
     default:
-      rightAnswer = num1 - num2;
+      throw new Error('Error!');
   }
-  return rightAnswer;
 };
 
 const getRoundData = () => {
