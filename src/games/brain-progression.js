@@ -1,4 +1,4 @@
-import randomNumber from '../additional content/randomNumber.js';
+import getRandomNumber from '../additionalСontent/randomNumber.js';
 import gameRounds from '../index.js';
 
 const description = 'What number is missing in the progression?';
@@ -11,19 +11,19 @@ const generateProgression = (firstItem, step, Length) => {
   return array;
 };
 
-const progressionGame = () => {
-  const first = randomNumber(1, 10);
-  const step = randomNumber(1, 10);
-  const length = randomNumber(5, 10);
+const getRoundData = () => {
+  const first = getRandomNumber(1, 10);
+  const step = getRandomNumber(1, 10);
+  const length = getRandomNumber(5, 10);
   const progression = generateProgression(first, step, length);
-  const randIndex = Math.floor(Math.random() * progression.length);
+  const randomIndex = Math.floor(Math.random() * progression.length);
 
-  const correctAnswer = `${progression[randIndex]}`;
-  progression[randIndex] = '..';
+  const correctAnswer = `${progression[randomIndex]}`;
+  progression[randomIndex] = '..';
   const question = progression.join(' ');
   return [question, correctAnswer];
 };
 
-const startGame = () => gameRounds(description, progressionGame);
+const startGame = () => gameRounds(description, getRoundData);
 
 export default startGame;

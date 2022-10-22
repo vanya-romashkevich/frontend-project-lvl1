@@ -1,20 +1,15 @@
-import randomNumber from '../additional content/randomNumber.js';
+import getRandomNumber from '../additionalСontent/randomNumber.js';
 import gameRounds from '../index.js';
 
 const description = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const isEven = (randomNum) => {
-  if (randomNum % 2 === 0) {
-    return true;
-  }
-  return false;
-};
+const isEven = (randomNum) => randomNum % 2 === 0;
 
-const evenGame = () => {
-  const randomNumber1 = randomNumber(1, 20);
-  const correctAnswer = isEven(randomNumber1) ? 'yes' : 'no';
-  return [randomNumber1, correctAnswer];
+const getRoundData = () => {
+  const randomNumber = getRandomNumber(1, 20);
+  const correctAnswer = isEven(randomNumber) ? 'yes' : 'no';
+  return [randomNumber, correctAnswer];
 };
-const startGame = () => gameRounds(description, evenGame);
+const startGame = () => gameRounds(description, getRoundData);
 
 export default startGame;
