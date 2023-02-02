@@ -1,4 +1,4 @@
-install-deps:
+install:
 	npm ci
 
 brain-games:
@@ -7,8 +7,8 @@ brain-games:
 publish:
 	npm publish --dry-run 
 
-make-lint:
-	npx eslint
+lint:
+	npx eslint .
 	
 brain-even:
 	node bin/brain-even.js
